@@ -10,7 +10,6 @@
 </template>
 
 <script lang="ts" setup>
-definePageMeta({ auth: false })
 const { data, status, getCsrfToken, getProviders } = useSession()
 
 const providers = await getProviders()
